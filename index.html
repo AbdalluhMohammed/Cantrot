@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantrot - Global Equestrian Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-brand">
+            <svg class="logo" viewBox="0 0 100 100" width="50" height="50">
+                <path d="M50 10 Q30 25 25 40 T30 70 Q40 85 50 85 Q60 85 70 70 T75 40 Q70 25 50 10" 
+                      fill="url(#gradient)" stroke="#fff" stroke-width="2"/>
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ff6b6b"/>
+                        <stop offset="100%" style="stop-color:#4ecdc4"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <span class="brand-text">Cantrot</span>
+        </div>
+        <ul class="nav-menu">
+            <li data-section="services">Services</li>
+            <li data-section="booking">Booking</li>
+            <li data-section="education">Education</li>
+            <li data-section="loyalty">Rewards</li>
+            <li data-section="analytics">Analytics</li>
+        </ul>
+        <button class="mobile-toggle">☰</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="CANTROT">CANTROT</h1>
+            <p class="hero-subtitle">Global Smart Equestrian Platform</p>
+            <div class="hero-stats">
+                <div class="stat-card" data-count="15000">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">Active Riders</span>
+                </div>
+                <div class="stat-card" data-count="500">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">Service Providers</span>
+                </div>
+                <div class="stat-card" data-count="50">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">Cities Covered</span>
+                </div>
+            </div>
+            <button class="cta-button" id="explore-btn">
+                <span>Explore Platform</span>
+                <div class="button-particles"></div>
+            </button>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-cards">
+                <div class="float-card card-1">🏇 Live Sessions</div>
+                <div class="float-card card-2">📱 Mobile First</div>
+                <div class="float-card card-3">🎯 AI Powered</div>
+                <div class="float-card card-4">🌍 Global Reach</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Services Grid -->
+    <section class="services-section" id="services">
+        <h2 class="section-title">Comprehensive Services</h2>
+        <div class="services-grid">
+            <div class="service-cube" data-service="booking">
+                <div class="cube-face front">
+                    <span class="service-icon">📅</span>
+                    <h3>Smart Booking</h3>
+                </div>
+                <div class="cube-face back">
+                    <p>Real-time availability</p>
+                    <p>Instant confirmation</p>
+                    <p>Group bookings</p>
+                </div>
+            </div>
+            <div class="service-cube" data-service="education">
+                <div class="cube-face front">
+                    <span class="service-icon">🎓</span>
+                    <h3>Virtual Education</h3>
+                </div>
+                <div class="cube-face back">
+                    <p>Live streaming</p>
+                    <p>HD/4K courses</p>
+                    <p>Certifications</p>
+                </div>
+            </div>
+            <div class="service-cube" data-service="delivery">
+                <div class="cube-face front">
+                    <span class="service-icon">🚚</span>
+                    <h3>Smart Delivery</h3>
+                </div>
+                <div class="cube-face back">
+                    <p>Equipment rental</p>
+                    <p>Express shipping</p>
+                    <p>Installation service</p>
+                </div>
+            </div>
+            <div class="service-cube" data-service="loyalty">
+                <div class="cube-face front">
+                    <span class="service-icon">⭐</span>
+                    <h3>Loyalty Program</h3>
+                </div>
+                <div class="cube-face back">
+                    <p>Points & rewards</p>
+                    <p>VIP membership</p>
+                    <p>Exclusive offers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking System Demo -->
+    <section class="booking-demo" id="booking">
+        <h2 class="section-title">Interactive Booking System</h2>
+        <div class="booking-container">
+            <div class="booking-steps">
+                <div class="step active" data-step="1">
+                    <span class="step-number">1</span>
+                    <span class="step-text">Select Service</span>
+                </div>
+                <div class="step" data-step="2">
+                    <span class="step-number">2</span>
+                    <span class="step-text">Choose Time</span>
+                </div>
+                <div class="step" data-step="3">
+                    <span class="step-number">3</span>
+                    <span class="step-text">Confirm</span>
+                </div>
+            </div>
+            
+            <div class="booking-content">
+                <div class="booking-panel active" id="panel-1">
+                    <div class="service-options">
+                        <div class="service-option">
+                            <h4>Individual Training</h4>
+                            <p class="price">\$120/session</p>
+                            <button class="select-btn">Select</button>
+                        </div>
+                        <div class="service-option featured">
+                            <span class="badge">Popular</span>
+                            <h4>Group Session</h4>
+                            <p class="price">\$80/person</p>
+                            <button class="select-btn">Select</button>
+                        </div>
+                        <div class="service-option">
+                            <h4>Premium Package</h4>
+                            <p class="price">\$450/month</p>
+                            <button class="select-btn">Select</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="booking-panel" id="panel-2">
+                    <div class="calendar-widget">
+                        <div class="calendar-header">
+                            <button class="cal-nav">←</button>
+                            <span>December 2024</span>
+                            <button class="cal-nav">→</button>
+                        </div>
+                        <div class="time-slots">
+                            <div class="time-slot available">9:00 AM</div>
+                            <div class="time-slot available">10:30 AM</div>
+                            <div class="time-slot">12:00 PM</div>
+                            <div class="time-slot available">2:00 PM</div>
+                            <div class="time-slot available">3:30 PM</div>
+                            <div class="time-slot">5:00 PM</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="booking-panel" id="panel-3">
+                    <div class="confirmation">
+                        <div class="confirm-icon">✅</div>
+                        <h3>Booking Confirmed!</h3>
+                        <p>Your session has been scheduled</p>
+                        <div class="booking-details">
+                            <p><strong>Service:</strong> Group Session</p>
+                            <p><strong>Date:</strong> Dec 15, 2024</p>
+                            <p><strong>Time:</strong> 10:30 AM</p>
+                            <p><strong>Price:</strong> $80</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loyalty Program Visualization -->
+    <section class="loyalty-section" id="loyalty">
+        <h2 class="section-title">Dynamic Loyalty Program</h2>
+        <div class="loyalty-tiers">
+            <div class="tier bronze">
+                <div class="tier-icon">🥉</div>
+                <h3>Bronze</h3>
+                <ul class="tier-benefits">
+                    <li>5% discount</li>
+                    <li>Priority support</li>
+                    <li>Monthly newsletter</li>
+                </ul>
+                <div class="points-range">0-999 points</div>
+            </div>
+            <div class="tier silver">
+                <div class="tier-icon">🥈</div>
+                <h3>Silver</h3>
+                <ul class="tier-benefits">
+                    <li>10% discount</li>
+                    <li>Free equipment rental</li>
+                    <li>VIP events access</li>
+                </ul>
+                <div class="points-range">1000-4999 points</div>
+            </div>
+            <div class="tier gold active">
+                <div class="tier-icon">🥇</div>
+                <h3>Gold</h3>
+                <ul class="tier-benefits">
+                    <li>15% discount</li>
+                    <li>Personal trainer</li>
+                    <li>Premium content</li>
+                </ul>
+                <div class="points-range">5000-9999 points</div>
+            </div>
+            <div class="tier platinum">
+                <div class="tier-icon">💎</div>
+                <h3>Platinum</h3>
+                <ul class="tier-benefits">
+                    <li>20% discount</li>
+                    <li>Exclusive experiences</li>
+                    <li>Concierge service</li>
+                </ul>
+                <div class="points-range">10000+ points</div>
+            </div>
+        </div>
+        
+        <div class="points-tracker">
+            <div class="tracker-header">
+                <h4>Your Progress</h4>
+                <span class="current-points">6,750 points</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 67.5%"></div>
+                <div class="progress-milestone" style="left: 10%">1K</div>
+                <div class="progress-milestone" style="left: 50%">5K</div>
+                <div class="progress-milestone" style="left: 100%">10K</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Dashboard -->
+    <section class="analytics-section" id="analytics">
+        <h2 class="section-title">Real-Time Analytics</h2>
+        <div class="analytics-grid">
+            <div class="chart-container">
+                <h4>Revenue Trend</h4>
+                <canvas id="revenue-chart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h4>Service Distribution</h4>
+                <div class="pie-chart" id="service-pie"></div>
+            </div>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-value">87%</span>
+                    <span class="metric-label">Satisfaction Rate</span>
+                    <div class="metric-change positive">+5%</div>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-value">2.3K</span>
+                    <span class="metric-label">Daily Bookings</span>
+                    <div class="metric-change positive">+12%</div>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-value">45min</span>
+                    <span class="metric-label">Avg Session</span>
+                    <div class="metric-change neutral">0%</div>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-value">$125K</span>
+                    <span class="metric-label">Monthly Revenue</span>
+                    <div class="metric-change positive">+18%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Features Showcase -->
+    <section class="ai-section">
+        <h2 class="section-title">AI-Powered Intelligence</h2>
+        <div class="ai-features">
+            <div class="ai-feature">
+                <div class="ai-icon">🤖</div>
+                <h4>Smart Recommendations</h4>
+                <p>Personalized service suggestions based on your preferences and history</p>
+            </div>
+            <div class="ai-feature">
+                <div class="ai-icon">📊</div>
+                <h4>Predictive Analytics</h4>
+                <p>Forecast demand and optimize resource allocation automatically</p>
+            </div>
+            <div class="ai-feature">
+                <div class="ai-icon">🔍</div>
+                <h4>Intelligent Search</h4>
+                <p>Natural language processing for intuitive service discovery</p>
+            </div>
+            <div class="ai-feature">
+                <div class="ai-icon">🌐</div>
+                <h4>Multi-Language Support</h4>
+                <p>Real-time translation and localization for global accessibility</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Platform</h4>
+                <ul>
+                    <li>Mobile App</li>
+                    <li>API Access</li>
+                    <li>Integration</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li>Individual Training</li>
+                    <li>Group Sessions</li>
+                    <li>Virtual Education</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <span class="social-icon">📱</span>
+                    <span class="social-icon">💬</span>
+                    <span class="social-icon">📧</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Cantrot - Transforming Equestrian Experiences Globally</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
